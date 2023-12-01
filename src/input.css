@@ -4,6 +4,7 @@
 
 body {
     @apply container mx-auto px-24 py-8;
+    @apply text-lg font-mono;
 }
 
 /* NAVBAR */
@@ -16,8 +17,14 @@ header .logo {
     @apply hover:text-gray-700 hover:underline hover:cursor-pointer
 }
 
+header .menu {
+    @apply md:hidden w-6 h-6;
+    @apply hover:text-gray-700 hover:cursor-pointer
+}
+
 nav {
-    @apply flex items-center space-x-4;
+    @apply hidden md:flex text-sm;
+    @apply items-center space-x-4;
 }
 
 nav a {
@@ -25,6 +32,20 @@ nav a {
 }
 
 .fill-btn {
-    @apply bg-black text-white px-4 py-2 rounded-md border-transparent border-2 hover:border-black hover:bg-white hover:text-black hover:cursor-pointer;
+    @apply bg-black text-white px-4 py-2 rounded-md border-transparent border-2;
+    @apply hover:bg-white hover:text-black hover:border-black;
 }
 
+
+/* PRESENTATION */
+.presentation {
+    @apply flex flex-col-reverse md:flex-row items-center justify-between;
+}
+
+/* .info {
+    @apply flex-1
+}
+
+.presentation img {
+    @apply flex-1
+} */

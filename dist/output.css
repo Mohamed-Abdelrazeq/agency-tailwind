@@ -534,40 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 body {
   width: 100%;
 }
@@ -609,6 +575,9 @@ body {
   padding-right: 6rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 /* NAVBAR */
@@ -633,8 +602,36 @@ header .logo:hover {
   text-decoration-line: underline;
 }
 
+header .menu {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  header .menu {
+    display: none;
+  }
+}
+
+header .menu:hover {
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 nav {
-  display: flex;
+  display: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+  }
+}
+
+nav {
   align-items: center;
 }
 
@@ -665,7 +662,6 @@ nav a:hover {
 }
 
 .fill-btn:hover {
-  cursor: pointer;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -674,3 +670,25 @@ nav a:hover {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+/* PRESENTATION */
+
+.presentation {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    flex-direction: row;
+  }
+}
+
+/* .info {
+    @apply flex-1
+}
+
+.presentation img {
+    @apply flex-1
+} */
