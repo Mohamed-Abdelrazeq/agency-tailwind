@@ -55,7 +55,7 @@ nav a {
 /* PRESENTATION */
 .presentation {
     @apply flex flex-col-reverse md:flex-row items-center justify-between;
-    @apply my-24;
+    @apply my-12;
 }
 
 .info {
@@ -70,6 +70,7 @@ nav a {
 .presentation img {
     @apply mb-6 md:mb-0 md:w-7/12 h-max;
     @apply rounded-lg object-cover;
+    @apply h-80;
 } 
 
 .presentation .btns {
@@ -85,6 +86,14 @@ nav a {
     @apply text-4xl font-bold text-center;    
 }
 
+.services h2 {
+    @apply text-2xl font-bold text-center mb-2;    
+}
+
+.services h4 {
+    @apply text-sm font-light text-center;    
+
+}
 
 
 .services-row-2 {
@@ -97,7 +106,7 @@ nav a {
 }
 
 .item {
-    @apply container shadow-sm px-3 py-6  mx-auto h-80 rounded-lg bg-gray-200;
+    @apply container shadow-sm px-3 py-4  mx-auto h-80 rounded-lg bg-gray-200;
 }
 
 
