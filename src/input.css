@@ -22,12 +22,8 @@ h3 {
     @apply text-sm font-light text-gray-400;
 }
 
-.image {
-    @apply rounded-lg;
-}
-
 body {
-    @apply container mx-auto px-12 py-8 text-center;
+    @apply mx-auto px-6 py-8 text-center ;
     @apply bg-slate-100
 }
 
@@ -59,7 +55,7 @@ nav a {
 /* PRESENTATION */
 .presentation {
     @apply flex flex-col-reverse md:flex-row items-center justify-between;
-    @apply mb-12;
+    @apply my-24;
 }
 
 .info {
@@ -72,7 +68,8 @@ nav a {
 }
 
 .presentation img {
-    @apply mb-6 md:mb-0 md:w-7/12;
+    @apply mb-6 md:mb-0 md:w-7/12 h-max;
+    @apply rounded-lg object-cover;
 } 
 
 .presentation .btns {
@@ -81,7 +78,7 @@ nav a {
 
 /* SERVICES */
 .services {
-    @apply flex flex-col pt-24;
+    @apply flex flex-col pt-12;
 }
 
 .services h1 {
@@ -100,21 +97,30 @@ nav a {
 }
 
 .item {
-    @apply container shadow-md px-2 py-2 mx-auto h-80 rounded-lg;
+    @apply container shadow-sm px-3 py-6  mx-auto h-80 rounded-lg bg-gray-200;
 }
 
 
 /* FEATURES */
 .feature {
-    @apply flex flex-col mt-24 bg-white p-4 rounded-lg shadow-md;
+    @apply flex flex-col mt-24 p-4 rounded-lg ;
+    @apply md:flex-row md:justify-center;
+}
+
+.feature-content {
+    @apply md:pl-4 md:text-left;
 }
 
 .feature h2 {
-    @apply text-3xl font-bold text-center mt-4 mb-2;    
+    @apply text-3xl font-bold text-center mt-4 mb-2 md:text-left;    
+}
+
+.feature img {
+    @apply md:w-6/12 md:h-96 rounded-lg object-cover ;
 }
 
 .feature-card {
-    @apply bg-gray-100 rounded-md shadow-sm mt-4 py-2 px-4 text-left text-gray-900;
+    @apply bg-gray-200 rounded-md shadow-sm mt-4 py-2 px-4 text-left text-gray-900;
 }
 
 .feauter-card-title{
@@ -124,13 +130,14 @@ nav a {
 
 .feature-row{
     @apply flex flex-row items-center justify-start space-x-2;
+    @apply  md:justify-start ;
 }
 
 .feature-card-subtext{
-    @apply text-sm font-light text-gray-600;
+    @apply text-sm font-light text-gray-600 italic;
 
 }
 
-.feature-icon {
-    @apply h-4;
+.feature-card img {
+    @apply h-4 w-4;
 }
