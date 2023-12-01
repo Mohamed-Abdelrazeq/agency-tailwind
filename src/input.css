@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GENERAL */
+.fill-btn {
+    @apply bg-black text-white px-4 py-2 rounded-md border-transparent border-2;
+    @apply hover:bg-white hover:text-black hover:border-black;
+    @apply min-w-max;
+}
+
+.outline-btn {
+    @apply bg-transparent text-black px-4 py-2 rounded-md border-black border-2;
+    @apply hover:bg-black hover:text-white hover:border-transparent;
+}
+
 body {
-    @apply container mx-auto px-24 py-8;
-    @apply text-lg font-mono;
+    @apply container mx-auto px-12 py-8;
 }
 
 /* NAVBAR */
 header {
     @apply flex justify-between items-center mb-12;
+    @apply font-mono;
 }
 
 header .logo {
@@ -18,12 +30,12 @@ header .logo {
 }
 
 header .menu {
-    @apply md:hidden w-6 h-6;
+    @apply sm:hidden w-6 h-6;
     @apply hover:text-gray-700 hover:cursor-pointer
 }
 
 nav {
-    @apply hidden md:flex text-sm;
+    @apply hidden sm:flex text-sm;
     @apply items-center space-x-4;
 }
 
@@ -31,21 +43,30 @@ nav a {
     @apply hover:text-gray-400 hover:cursor-pointer
 }
 
-.fill-btn {
-    @apply bg-black text-white px-4 py-2 rounded-md border-transparent border-2;
-    @apply hover:bg-white hover:text-black hover:border-black;
-}
-
-
 /* PRESENTATION */
 .presentation {
     @apply flex flex-col-reverse md:flex-row items-center justify-between;
+    @apply mb-12;
 }
 
-/* .info {
-    @apply flex-1
+.info {
+    @apply text-center md:text-left;
+    @apply pr-4;
+}
+
+.info h1 {
+    @apply text-4xl font-bold;
+}
+
+.info h3 {
+    @apply text-sm font-light text-gray-400;
+    @apply mb-4 mt-2;
 }
 
 .presentation img {
-    @apply flex-1
-} */
+    @apply rounded-lg mb-6 md:mb-0 md:w-7/12;
+} 
+
+.presentation .btns {
+    @apply flex items-center justify-center space-x-2 md:justify-start;
+}
