@@ -19,11 +19,11 @@ h1 {
 }
 
 h3 {
-    @apply text-sm font-light text-gray-400;
+    @apply text-lg font-light text-gray-400;
 }
 
 body {
-    @apply mx-auto px-6 py-8 text-center ;
+    @apply mx-auto px-6 py-8 text-center xl:px-24;
     @apply bg-slate-100
 }
 
@@ -60,15 +60,19 @@ nav a {
 
 .info {
     @apply text-center md:text-left;
-    @apply pr-4;
+    @apply pr-0 lg:pr-16;
 }
+
+/* .info h1 {
+     @apply pr-0 md:pr-6 lg:pr-12; 
+} */
 
 .info h3 {
     @apply mb-4 mt-2;
 }
 
 .presentation img {
-    @apply mb-6 md:mb-0 md:w-7/12 h-max;
+    @apply mb-6 md:mb-0 md:w-6/12 h-max;
     @apply rounded-lg object-cover;
     @apply h-80;
 } 
