@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply container mx-auto px-24 py-8;
+}
+
+/* NAVBAR */
+header {
+    @apply flex justify-between items-center mb-12;
+}
+
+header .logo {
+    @apply text-2xl font-bold;
+    @apply hover:text-gray-700 hover:underline hover:cursor-pointer
+}
+
+nav {
+    @apply flex items-center space-x-4;
+}
+
+nav a {
+    @apply hover:text-gray-400 hover:cursor-pointer
+}
+
+.fill-btn {
+    @apply bg-black text-white px-4 py-2 rounded-md border-transparent border-2 hover:border-black hover:bg-white hover:text-black hover:cursor-pointer;
+}
+
