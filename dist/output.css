@@ -889,7 +889,16 @@ nav a:hover {
 
 /* FEATURES */
 
-.feature {
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.feature-1, .feature-2 {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -898,19 +907,24 @@ nav a:hover {
 }
 
 @media (min-width: 768px) {
-  .feature {
+  .feature-1, .feature-2 {
     flex-direction: row;
+    align-items: center;
     justify-content: center;
   }
 
-  .feature-content {
+  .feature-1 .feature-content {
     padding-left: 1rem;
     text-align: left;
   }
+
+  .feature-2 .feature-content {
+    padding-right: 1rem;
+    text-align: right;
+  }
 }
 
-.feature h2 {
-  margin-top: 1rem;
+.feature-1 h2 {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 1.875rem;
@@ -919,21 +933,35 @@ nav a:hover {
 }
 
 @media (min-width: 768px) {
-  .feature h2 {
+  .feature-1 h2 {
     text-align: left;
   }
 }
 
-.feature img {
+.feature-1 img, .feature-2 img {
   border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .feature img {
+  .feature-1 img, .feature-2 img {
     height: 24rem;
     width: 50%;
+  }
+}
+
+.feature-2 h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .feature-2 h2 {
+    text-align: right;
   }
 }
 

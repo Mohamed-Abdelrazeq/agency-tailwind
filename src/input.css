@@ -115,21 +115,34 @@ nav a {
 
 
 /* FEATURES */
-.feature {
-    @apply flex flex-col mt-24 p-4 rounded-lg ;
-    @apply md:flex-row md:justify-center;
+.features {
+    @apply flex flex-col items-center justify-center;
+    @apply my-12;
 }
 
-.feature-content {
+.feature-1, .feature-2 {
+    @apply flex flex-col mt-24 p-4 rounded-lg ;
+    @apply md:flex-row md:justify-center md:items-center ;
+}
+
+.feature-1 .feature-content {
     @apply md:pl-4 md:text-left;
 }
 
-.feature h2 {
-    @apply text-3xl font-bold text-center mt-4 mb-2 md:text-left;    
+.feature-2 .feature-content {
+    @apply md:pr-4 md:text-right    ;
 }
 
-.feature img {
+.feature-1 h2 {
+    @apply text-3xl font-bold text-center mb-2 md:text-left;    
+}
+
+.feature-1 img, .feature-2 img{
     @apply md:w-6/12 md:h-96 rounded-lg object-cover ;
+}
+
+.feature-2 h2 {
+    @apply text-3xl font-bold text-center mb-2 md:text-right;    
 }
 
 .feature-card {
