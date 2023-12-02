@@ -139,6 +139,11 @@ nav a {
 
 .feature-1 img, .feature-2 img{
     @apply md:w-6/12 md:h-96 rounded-lg object-cover ;
+    @apply my-4 md:my-0;
+}
+
+.feature-2 img{
+    @apply order-first md:order-last;
 }
 
 .feature-2 h2 {

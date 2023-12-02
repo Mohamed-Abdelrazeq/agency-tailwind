@@ -951,6 +951,28 @@ nav a:hover {
   }
 }
 
+.feature-1 img, .feature-2 img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-1 img, .feature-2 img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.feature-2 img {
+  order: -9999;
+}
+
+@media (min-width: 768px) {
+  .feature-2 img {
+    order: 9999;
+  }
+}
+
 .feature-2 h2 {
   margin-bottom: 0.5rem;
   text-align: center;
