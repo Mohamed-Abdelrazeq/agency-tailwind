@@ -29,15 +29,18 @@ h3 {
     @apply text-lg font-light text-gray-400;
 }
 
+.section {
+    @apply bg-slate-100  mx-auto px-6 xl:px-24;
+}
+
 body {
-    @apply mx-auto px-6 py-8 text-center xl:px-24;
-    @apply bg-slate-100;
+    @apply  text-center  bg-slate-100;
 }
 
 /* NAVBAR */
 header {
-    @apply flex justify-between items-center mb-12;
-    @apply font-mono;
+    @apply flex justify-between items-center py-12 px-6 xl:px-24;
+    @apply font-mono bg-gray-200;
 }
 
 header .logo {
@@ -67,7 +70,7 @@ nav a {
 /* PRESENTATION */
 .presentation {
     @apply flex flex-col-reverse md:flex-row items-center justify-between;
-    @apply my-12;
+    @apply bg-gray-200 pb-20 pt-4;
 }
 
 .info {
@@ -188,8 +191,12 @@ nav a {
     @apply my-12;
 }
 
+.projects {
+    @apply bg-gray-200 py-20;
+}
+
 .projects-titles {
-    @apply w-full md:px-4 mt-12 flex flex-col md:flex-row justify-between md:items-start items-center;
+    @apply w-full md:px-4 flex flex-col md:flex-row justify-between md:items-start items-center;
 }
 
 .projects h1 {
