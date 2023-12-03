@@ -1265,7 +1265,8 @@ nav a:hover {
 }
 
 .projects .project-image {
-  height: 24rem;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;

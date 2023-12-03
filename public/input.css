@@ -235,7 +235,7 @@ nav a {
 }
 
 .projects .project-image {
-    @apply h-96 rounded-lg object-cover ;
+    @apply h-fit rounded-lg object-cover ;
     @apply hover:cursor-pointer hover:scale-105 hover:shadow-lg;
     @apply hover:transition-all hover:duration-300 hover:ease-in-out;
 }
