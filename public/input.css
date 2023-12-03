@@ -31,6 +31,7 @@ h3 {
 
 .section {
     @apply bg-slate-100  mx-auto px-10 xl:px-24 2xl:px-40;
+    @apply px-10 xl:px-24 2xl:px-40;
 }
 
 body {
@@ -39,8 +40,9 @@ body {
 
 /* NAVBAR */
 header {
-    @apply flex justify-between items-center py-12 px-6 xl:px-24;
+    @apply flex justify-between items-center py-12 ;
     @apply font-mono bg-gray-200;
+    @apply px-10 xl:px-24 2xl:px-40;
 }
 
 header .logo {
@@ -111,11 +113,11 @@ nav a {
 }
 
 .item {
-    @apply container shadow-sm px-3 py-4  mx-auto h-80 rounded-lg bg-gray-200 flex flex-col items-stretch justify-evenly;
+    @apply container shadow-sm p-3  mx-auto h-fit rounded-lg bg-gray-200 flex flex-col items-stretch justify-evenly;
 }
 
 .service-image {
-    @apply  rounded-lg object-cover h-52 shadow-md mt-4;
+    @apply  rounded-lg object-cover h-96 shadow-md;
 }
 
 
