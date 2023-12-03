@@ -31,7 +31,7 @@ h3 {
 
 .section {
     @apply bg-slate-100  mx-auto px-10 xl:px-24 2xl:px-40;
-    @apply px-10 xl:px-24 2xl:px-40;
+    @apply px-10 xl:px-24 2xl:px-52;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
 header {
     @apply flex justify-between items-center py-12 ;
     @apply font-mono bg-gray-200;
-    @apply px-10 xl:px-24 2xl:px-40;
+    @apply px-10 xl:px-24 2xl:px-52;
 }
 
 header .logo {
@@ -87,7 +87,7 @@ nav a {
 .presentation img {
     @apply mb-6 md:mb-0 md:w-6/12 h-max;
     @apply rounded-lg object-cover;
-    @apply h-80;
+    @apply h-96 shadow-md;
 } 
 
 .presentation .btns {
@@ -96,16 +96,22 @@ nav a {
 
 /* SERVICES */
 .services {
-    @apply flex flex-col pt-12;
+    @apply flex flex-col py-40;
 }
 
 .services h1 {
-    @apply text-5xl font-light text-center;    
+    @apply text-5xl font-light text-center; 
+}
+
+.services h3 {
+    @apply mb-6 underline;
 }
 
 .services h2 {
-    @apply text-2xl font-medium text-center mb-2;    
+    @apply text-2xl font-medium text-center;    
 }
+
+
 
 .services h4 {
     @apply text-sm font-light text-center text-gray-400 h-12;    
