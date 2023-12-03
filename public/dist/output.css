@@ -534,6 +534,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.block {
+  display: block;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* GENERAL */
 
 .fill-btn {
