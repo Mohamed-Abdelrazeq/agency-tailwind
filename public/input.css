@@ -108,22 +108,23 @@ nav a {
 }
 
 .services h2 {
-    @apply text-2xl font-medium text-center;    
+    @apply text-3xl font-light text-left text-gray-800  px-4 mt-2;     
 }
 
 
 
 .services h4 {
-    @apply text-sm font-light text-center text-gray-400 h-12;    
+    @apply text-sm font-light text-left text-gray-400 px-4;    
 
 }
 
 .item {
-    @apply container shadow-sm p-3  mx-auto h-fit rounded-lg bg-gray-200 flex flex-col items-stretch justify-evenly;
+    @apply h-96 w-full bg-service-1 bg-cover bg-center;
+    @apply  shadow-sm rounded-lg;
 }
 
 .service-image {
-    @apply  rounded-lg object-cover h-96 shadow-md;
+    @apply  rounded-t-lg object-cover h-80;
 }
 
 
