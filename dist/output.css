@@ -611,9 +611,9 @@ video {
 
 h1 {
   margin-bottom: 0.5rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 300;
 }
 
 h3 {
@@ -818,9 +818,9 @@ nav a:hover {
 
 .services h1 {
   text-align: center;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 300;
 }
 
 .services h2 {
@@ -828,7 +828,7 @@ nav a:hover {
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .services h4 {
@@ -836,6 +836,8 @@ nav a:hover {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .services-row-2 {
@@ -942,6 +944,16 @@ nav a:hover {
     align-items: center;
     justify-content: center;
   }
+}
+
+.feature-2 {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .feature-2 {
+    flex-direction: row;
+  }
 
   .feature-1 .feature-content {
     padding-left: 1rem;
@@ -957,9 +969,9 @@ nav a:hover {
 .feature-1 h2 {
   margin-bottom: 0.5rem;
   text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -993,22 +1005,12 @@ nav a:hover {
   }
 }
 
-.feature-2 img {
-  order: -9999;
-}
-
-@media (min-width: 768px) {
-  .feature-2 img {
-    order: 9999;
-  }
-}
-
 .feature-2 h2 {
   margin-bottom: 0.5rem;
   text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -1038,7 +1040,7 @@ nav a:hover {
   margin: 0px;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 600;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }

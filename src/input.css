@@ -22,7 +22,7 @@
 }
 
 h1 {
-    @apply text-4xl font-bold mb-2;
+    @apply text-5xl font-light mb-2;
 }
 
 h3 {
@@ -95,15 +95,15 @@ nav a {
 }
 
 .services h1 {
-    @apply text-4xl font-bold text-center;    
+    @apply text-5xl font-light text-center;    
 }
 
 .services h2 {
-    @apply text-2xl font-bold text-center mb-2;    
+    @apply text-2xl font-medium text-center mb-2;    
 }
 
 .services h4 {
-    @apply text-sm font-light text-center;    
+    @apply text-sm font-light text-center text-gray-400;    
 
 }
 
@@ -133,16 +133,20 @@ nav a {
     @apply md:flex-row md:justify-center md:items-center ;
 }
 
+.feature-2{
+    @apply flex-col-reverse md:flex-row;
+}
+
 .feature-1 .feature-content {
     @apply md:pl-4 md:text-left;
 }
 
 .feature-2 .feature-content {
-    @apply md:pr-4 md:text-right    ;
+    @apply md:pr-4 md:text-right;
 }
 
 .feature-1 h2 {
-    @apply text-3xl font-bold text-center mb-2 md:text-left;    
+    @apply text-4xl font-light text-center mb-2 md:text-left;    
 }
 
 .feature-1 img, .feature-2 img{
@@ -150,12 +154,9 @@ nav a {
     @apply my-4 md:my-0;
 }
 
-.feature-2 img{
-    @apply order-first md:order-last;
-}
 
 .feature-2 h2 {
-    @apply text-3xl font-bold text-center mb-2 md:text-right;    
+    @apply text-4xl font-light text-center mb-2 md:text-right;    
 }
 
 .feature-card {
@@ -163,7 +164,7 @@ nav a {
 }
 
 .feauter-card-title{
-    @apply text-lg font-semibold text-gray-900 m-0;
+    @apply text-lg font-medium text-gray-900 m-0;
 
 }
 
