@@ -30,7 +30,7 @@ h3 {
 }
 
 .section {
-    @apply bg-slate-100  mx-auto px-6 xl:px-24;
+    @apply bg-slate-100  mx-auto px-10 xl:px-24 2xl:px-40;
 }
 
 body {
@@ -135,6 +135,12 @@ nav a {
 .features {
     @apply flex flex-col items-center justify-center;
     @apply my-12;
+}
+
+.features .image {
+    @apply w-max h-96 rounded-lg object-cover ;
+    @apply my-4 md:my-0 md:w-1/2;
+
 }
 
 .feature-1, .feature-2 {
