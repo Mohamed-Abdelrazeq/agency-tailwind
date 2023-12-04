@@ -108,25 +108,34 @@ nav a {
 }
 
 .services h2 {
-    @apply text-3xl font-light text-left text-gray-800  px-4 mt-2;     
+    @apply text-3xl font-semibold md:text-left text-center text-slate-200 ;     
 }
 
-
-
 .services h4 {
-    @apply text-sm font-light text-left text-gray-400 px-4;    
+    @apply text-sm font-extralight md:text-left text-center text-slate-300;
+}
 
+.services .content {
+    @apply absolute bottom-0 left-0  p-4;
+    @apply flex flex-col justify-end;
+    @apply bg-gradient-to-t from-gray-900 to-from-gray-100;
 }
 
 .item {
-    @apply h-96 w-full bg-service-1 bg-cover bg-center;
-    @apply  shadow-sm rounded-lg;
+    @apply shadow-lg rounded-lg;
+    @apply h-96 bg-cover bg-center;
+    @apply overflow-hidden;
+    @apply relative;
 }
 
-.service-image {
-    @apply  rounded-t-lg object-cover h-80;
+.item .image {
+    @apply h-96 w-full;
+    @apply rounded-lg object-cover;
+    @apply hover:cursor-pointer hover:scale-125 hover:transition-all duration-500 ease-in-out;
+    @apply blur-[1px] hover:blur-none;
+    @apply hover:saturate-150;
+    @apply brightness-75 hover:brightness-100;
 }
-
 
 .services-row-2 {
     @apply grid grid-cols-1 md:grid-cols-2 gap-4 ;
