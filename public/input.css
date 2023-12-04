@@ -108,7 +108,7 @@ nav a {
 }
 
 .services h2 {
-    @apply text-3xl font-semibold md:text-left text-center text-slate-200 ;     
+    @apply text-3xl font-semibold md:text-left text-center text-white ;     
 }
 
 .services h4 {
@@ -118,7 +118,7 @@ nav a {
 .services .content {
     @apply absolute bottom-0 left-0  p-4;
     @apply flex flex-col justify-end;
-    @apply bg-gradient-to-t from-gray-900 to-from-gray-100;
+    @apply bg-gradient-to-t from-gray-900 to-transparent;
 }
 
 .item {
@@ -134,7 +134,7 @@ nav a {
     @apply hover:cursor-pointer hover:scale-125 hover:transition-all duration-500 ease-in-out;
     @apply blur-[1px] hover:blur-none;
     @apply hover:saturate-150;
-    @apply brightness-75 hover:brightness-100;
+    @apply brightness-90 hover:brightness-100;
 }
 
 .services-row-2 {
