@@ -7,17 +7,16 @@
 
 .fill-btn {
     @apply bg-black text-white px-4 py-2 rounded-md border-transparent border-2;
-    @apply hover:bg-white hover:text-black hover:border-black;
-    @apply min-w-max;
     @apply hover:cursor-pointer hover:scale-105 hover:shadow-lg;
+    @apply  hover:-translate-y-1 hover:-translate-x-1 duration-300 transition ease-in-out;
     @apply hover:transition-all hover:duration-300 hover:ease-in-out;
     
 }
 
 .outline-btn {
     @apply bg-transparent text-black px-4 py-2 rounded-md border-black border-2;
-    @apply hover:bg-black hover:text-white hover:border-transparent;
     @apply hover:cursor-pointer hover:scale-105 hover:shadow-lg;
+    @apply  hover:-translate-y-1 hover:-translate-x-1 duration-300 transition ease-in-out;
     @apply hover:transition-all hover:duration-300 hover:ease-in-out;
 }
 
@@ -218,7 +217,7 @@ nav a {
 /* PROJECTS */
 .projects {
     @apply flex flex-col items-center justify-center;
-    @apply my-12;
+    @apply py-40;
 }
 
 .projects {
@@ -248,4 +247,45 @@ nav a {
     @apply h-fit rounded-lg object-cover ;
     @apply hover:cursor-pointer hover:scale-105 hover:shadow-lg;
     @apply hover:transition-all hover:duration-300 hover:ease-in-out;
+}
+
+
+/* Footer */
+footer {
+    @apply flex flex-col items-center justify-center;
+    @apply pt-12;
+    @apply pb-6;
+    @apply text-white;
+    @apply bg-black bg-opacity-90;
+    @apply h-fit;
+    @apply container;
+}
+
+footer h1 {
+    @apply text-5xl font-light mb-12 md:w-8/12 w-10/12;
+}
+
+footer .fill-btn-light {
+    @apply bg-white text-black px-4 py-2 rounded-full border-transparent border-2;
+    @apply  hover:-translate-y-1 hover:-translate-x-1 duration-300 transition ease-in-out;
+    @apply hover:transition-all hover:duration-300 hover:ease-in-out;
+    @apply mb-20 ;
+}
+
+footer .social-media {
+    @apply flex items-center justify-center space-x-2 md:space-x-8 underline;
+    @apply flex-wrap;
+}
+
+footer .social-media li{
+    @apply text-slate-100 hover:text-slate-100 hover:cursor-pointer;
+    @apply hover:underline; 
+    @apply hover:-translate-y-1;
+    @apply hover:transition-all hover:duration-300 hover:ease-in-out;
+}
+
+
+footer p {
+    @apply text-sm;
+    @apply border-t-2 border-slate-300 border-dotted w-11/12 pt-6 mt-12; 
 }
