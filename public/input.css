@@ -62,7 +62,7 @@ nav {
 }
 
 nav a {
-    @apply hover:text-gray-400 hover:cursor-pointer;
+    @apply hover:cursor-pointer;
     @apply hover:underline; 
     @apply hover:-translate-y-1;
     @apply hover:transition-all hover:duration-300 hover:ease-in-out;
@@ -95,7 +95,8 @@ nav a {
 
 /* SERVICES */
 .services {
-    @apply flex flex-col py-40;
+    @apply flex flex-col py-20;
+    @apply border-b-2 border-slate-300 border-dotted ;
 }
 
 .services h1 {
@@ -151,17 +152,17 @@ nav a {
 /* FEATURES */
 .features {
     @apply flex flex-col items-center justify-center;
-    @apply my-12;
+    @apply mb-24;
 }
 
 .features .image {
     @apply w-max h-96 rounded-lg object-cover ;
-    @apply my-4 md:my-0 md:w-1/2;
+    @apply mb-4 md:my-0 md:w-1/2;
 
 }
 
 .feature-1, .feature-2 {
-    @apply flex flex-col mt-24 p-4 rounded-lg ;
+    @apply flex flex-col mt-20 p-4 rounded-lg ;
     @apply md:flex-row md:justify-center md:items-center ;
 }
 

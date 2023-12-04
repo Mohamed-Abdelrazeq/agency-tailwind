@@ -777,8 +777,6 @@ nav > :not([hidden]) ~ :not([hidden]) {
 
 nav a:hover {
   cursor: pointer;
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
   text-decoration-line: underline;
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -880,8 +878,12 @@ nav a:hover {
 .services {
   display: flex;
   flex-direction: column;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-bottom-width: 2px;
+  border-style: dotted;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
 .services h1 {
@@ -1030,8 +1032,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .features .image {
@@ -1041,7 +1042,6 @@ nav a:hover {
   border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -1054,7 +1054,7 @@ nav a:hover {
 }
 
 .feature-1, .feature-2 {
-  margin-top: 6rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
